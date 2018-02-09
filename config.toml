@@ -1,7 +1,8 @@
 # Configuration of LEG Academic Personal Pages (legap-theme)
 # Read the README file!
 
-baseurl = "/"
+# baseurl = "/"
+baseurl = "http://www.leg.ufpr.br/~eduardojr/"
 copyright = "&copy; LEG 2018"
 
 theme = "leg-academic"
@@ -37,7 +38,7 @@ defaultContentLanguageInSubdir = true
   organizations = [
       { name = "ESALQ/USP", url = "www.leg.ufpr.br" }
   ]
-  avatar = "portrait.jpg"
+  avatar = "eduardo.jpg"
   email = "edujrrib@gmail.com"
   gravatar = false
   office_hours = ""
