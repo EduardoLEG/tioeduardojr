@@ -1,0 +1,281 @@
+# Configuration of LEG Academic Personal Pages (legap-theme)
+# Read the README file!
+
+baseurl = "/"
+copyright = "&copy; LEG 2018"
+
+theme = "leg-academic"
+enableEmoji = true
+footnotereturnlinkcontents = "<sup>^</sup>"
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+preserveTaxonomyNames = true
+paginate = 10
+
+disqusShortname = ""
+googleAnalytics = ""
+
+# Default language
+defaultContentLanguage = "pt"
+defaultContentLanguageInSubdir = true
+
+[outputs]
+  home = [ "HTML", "CSS", "RSS" ]
+  section = [ "HTML", "RSS" ]
+
+# Configure BlackFriday Markdown rendering.
+[blackfriday]
+  hrefTargetBlank = true
+  fractions = false
+  smartypants = true
+
+[params]
+  #-------------------------------------------
+  # Personal details
+  name = "Eduardo Ribeiro Junior"
+  role_pt = "Estudante de pós-graduação | pesquisador"
+  role_en = "Graduate student | researcher"
+  organizations = [
+      { name = "ESALQ/USP", url = "www.leg.ufpr.br" }
+  ]
+  avatar = "portrait.jpg"
+  email = "edujrrib@gmail.com"
+  gravatar = false
+  office_hours = ""
+  phone = ""
+  skype = ""
+  telegram = ""
+  address = "Piracicaba-SP, Brazil"
+
+  #-------------------------------------------
+  # Customizations
+  color_theme = "legcol"
+  font = "legfont"
+  map = 0
+  map_api_key = ""
+  latitude = ""
+  longitude = ""
+  zoom = 15
+  date_format = "Jan 2, 2006"
+  time_format = "3:04 PM"
+
+  reading_time = true   # Show estimated reading (posts)?
+  comment_count = true  # Display comment count?
+  section_pager = false # Display next/previous section pager?
+
+  # Enable global LaTeX math rendering?
+  #   If false, you can enable it locally on a per page basis.
+  math = true
+
+  # Highlight.js options
+  #   highlight
+  #     Enable global source code highlighting?  If false, you can
+  #     override it for a particular page in that page's preamble.
+  #
+  #     Example: highlight = true
+  #
+  #   highlight_languages
+  #     Add support for highlighting additional languages. Support for
+  #     languages mentioned here will be included in all pages. You
+  #     can also set this variable for a particular page in that
+  #     page's preamble.
+  #
+  #     Example: highlight_languages = ["go", "lisp", "ocaml"]
+  #
+  #   highlight_style
+  #     Choose a different CSS style for highlighting source
+  #     code. Setting this option in a page's preamble has no
+  #     effect.
+  #
+  #     Example: highlight_style = "github-gist"
+  #
+  #   For the list of supported languages and styles, see:
+  #   https://cdnjs.com/libraries/highlight.js/
+  #
+  #   For more info on the highlighting options, see:
+  #   https://sourcethemes.com/academic/post/writing-markdown-latex/#highlighting-options
+  highlight = true
+  highlight_languages = []
+  # highlight_style = "github"
+
+  # Enable native social sharing buttons?
+  sharing = true
+
+  # Link custom CSS and JS assets
+  #   (relative to /static/css and /static/js respectively)
+  custom_css = []
+  custom_js  = []
+
+  # Publication types.
+  #   Used to categorize publications.
+  #   The index of the publication type in the list is used as its unique numerical identifier.
+  #   The numeric ID is used in a publication's frontmatter to categorize it.
+  #   The language can be edited below.
+  #   For multilingual sites, `publication_types` can be copied to each language section at the end of this file and
+  #   translated.
+  publication_types = [
+    'Uncategorized',          # 0
+    'Conference proceedings', # 1
+    'Journal',                # 2
+    'Work in progress',       # 3
+    'Technical report',       # 4
+    'Book',                   # 5
+    'Book chapter',           # 6
+    'Thesis'                  # 7
+  ]
+
+  # Configuration of talk pages.
+  [params.talks]
+    # Show talk time?
+    time = true
+
+  # Configuration of publication pages.
+  [params.publications]
+    # Date format (refer to Go's date format: http://fuckinggodateformat.com )
+    #   Examples: "Mon, Jan 2, 2006" or "2006-01-02"
+    date_format = "January, 2006"
+
+  # Configuration of project pages.
+  [params.projects]
+    # List publications and talks related to the project?
+    list_children = true
+
+    # Publication list format.
+    #   0 = Simple
+    #   1 = Detailed
+    #   2 = APA
+    #   3 = MLA
+    publication_format = 3
+
+  # Social/Academic Networking
+  #
+  # Icon pack "fa" includes the following social network icons:
+  #
+  #   twitter, weibo, linkedin, github, facebook, pinterest, google-plus,
+  #   youtube, instagram, soundcloud
+  #
+  #   For email icon, use "fa" icon pack, "envelope" icon, and
+  #   "mailto:your@email.com" as the link.
+  #
+  #   Full list: https://fortawesome.github.io/Font-Awesome/icons/
+  #
+  # Icon pack "ai" includes the following academic network icons:
+  #
+  #   google-scholar, arxiv, orcid, researchgate, mendeley
+  #
+  #   Full list: https://jpswalsh.github.io/academicons/
+
+  # Social/Academic Networking
+  [[params.social]]
+    icon = "envelope"
+    icon_pack = "fa"
+    link = "mailto:edujrrib@gmail.com"
+
+  [[params.social]]
+    icon = "github"
+    icon_pack = "fa"
+    link = "//github.com/jreduardo"
+
+  [[params.social]]
+    icon = "researchgate"
+    icon_pack = "ai"
+    link = "https://www.researchgate.net/profile/Eduardo_Ribeiro_Junior"
+
+  [[params.social]]
+    icon = "mendeley"
+    icon_pack = "ai"
+    link = "https://www.mendeley.com/profiles/eduardo-junior3/"
+
+  [[params.social]]
+    icon = "google-scholar"
+    icon_pack = "ai"
+    link = "https://scholar.google.co.uk/citations?user=d9DaMeYAAAAJ"
+
+  [[params.social]]
+    icon = "orcid"
+    icon_pack = "ai"
+    link = "https://orcid.org/0000-0002-4367-0907"
+
+# Navigation Links
+#   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
+#     desired widget in your `content/home/` folder.
+#   The weight parameter defines the order that the links will appear in.
+[params.menus]
+  # Align the main menu to the right of the page? (true/false)
+  align_right = true
+
+#-----------------------------------------------------------------------
+# Multiple Languages
+[Languages.en]
+  languageCode = "en-us"
+[Languages.pt]
+  languageCode = "pt-br"
+
+#-------------------------------------------
+# Portuguese
+[[Languages.pt.menu.main]]
+  name = "Home"
+  url = "#about"
+  weight = 1
+
+[[Languages.pt.menu.main]]
+  name = "Publicações"
+  url = "#publications"
+  weight = 2
+
+[[Languages.pt.menu.main]]
+  name = "Projetos"
+  url = "#projects"
+  weight = 3
+
+[[Languages.pt.menu.main]]
+  name = "Ensino"
+  url = "#teaching"
+  weight = 4
+
+[[Languages.pt.menu.main]]
+  name = "Posts"
+  url = "#posts"
+  weight = 5
+
+[[Languages.pt.menu.main]]
+  name = "Contato"
+  url = "#contact"
+  weight = 6
+
+#-------------------------------------------
+# English
+[[Languages.en.menu.main]]
+  name = "Home"
+  url = "#about"
+  weight = 1
+
+[[Languages.en.menu.main]]
+  name = "Publications"
+  url = "#publications"
+  weight = 2
+
+[[Languages.en.menu.main]]
+  name = "Projects"
+  url = "#projects"
+  weight = 3
+
+[[Languages.en.menu.main]]
+  name = "Teaching"
+  url = "#teaching"
+  weight = 4
+
+[[Languages.en.menu.main]]
+  name = "Posts"
+  url = "#posts"
+  weight = 5
+
+[[Languages.en.menu.main]]
+  name = "Contact"
+  url = "#contact"
+  weight = 6
+
+# Taxonomies.
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  publication_type = "publication_types"
